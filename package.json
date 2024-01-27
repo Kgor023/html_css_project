@@ -1,14 +1,14 @@
 {
   "name": "final_project_html_css",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project_TMS",
   "main": "index.js",
   "source": "pages/main/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
   },
-  "author": "",
+  "author": "Egor Pyntikov",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.11.0",
