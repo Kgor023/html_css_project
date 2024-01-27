@@ -1,0 +1,23 @@
+@import url(./header.css);
+@import url(./main.css);
+@import url(./we_create.css);
+@import url(./stats.css);
+@import url(./way.css);
+@import url(./salary.css);
+@import url(./partners.css);
+@import url(./reviews.css);
+@import url(./welcome.css);
+@import url(./form_footer.css);
+@import url(./footer.css);
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+    url('../../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f6f7f9;
+}

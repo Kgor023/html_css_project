@@ -1,0 +1,283 @@
+main {
+  width: auto;
+  height: 480px;
+  position: relative;
+  background-color: rgba(0, 9, 60, 1);
+}
+.main__rectangle {
+  width: auto;
+  position: absolute;
+  z-index: 1;
+}
+.main__slider {
+  position: absolute;
+  top: 0px;
+  right: 370px;
+  z-index: 1;
+}
+.main__rectangle_2 {
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+}
+.main__cross_2 {
+  position: absolute;
+  top: 49px;
+  left: 200px;
+  z-index: 2;
+}
+.main__line {
+  position: absolute;
+  top: 263px;
+  z-index: 2;
+  left: 129px;
+}
+.main__line_2 {
+  position: absolute;
+  left: 638px;
+  bottom: -42px;
+  z-index: 2;
+}
+.main__line_3 {
+  position: absolute;
+  top: 180px;
+  z-index: 2;
+  left: 790px;
+}
+.main__line_4 {
+  position: absolute;
+  bottom: -31.5px;
+  z-index: 2;
+  right: 85px;
+}
+.main__cross {
+  position: absolute;
+  top: 161px;
+  z-index: 2;
+  right: 432px;
+}
+.main__triangle_1 {
+  position: absolute;
+  top: 24px;
+  z-index: 2;
+  right: 670px;
+}
+.main__triangle_2 {
+  position: absolute;
+  top: 45px;
+  z-index: 2;
+  right: 122px;
+}
+.main__circle {
+  position: absolute;
+  bottom: 42px;
+  z-index: 2;
+  right: 722px;
+}
+.main_text {
+  position: relative;
+  top: 39px;
+  left: 370px;
+  z-index: 3;
+}
+#main_text__title {
+  color: white;
+  font-family: Montserrat;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+#main_text__description {
+  width: 640px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 44px;
+}
+.main_text_container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.main_text_time {
+  width: 119px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
+.main_text_mode {
+  width: 309px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
+.main_text_money {
+  width: 285px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 13px;
+  margin-bottom: 30px;
+}
+.main_text h2 {
+  color: white;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.main_text h3 {
+  color: white;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+.main_text button {
+  height: 50px;
+  width: 286px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: rgba(247, 148, 29, 1);
+  border: 1px solid rgba(247, 148, 29, 1);
+  border-radius: 6px;
+}
+@media all and (max-width: 1800px) {
+  .main_text {
+    width: 700px;
+    left: 100px;
+    top: 25px;
+  }
+  .main_text h3 {
+    left: 100px;
+    width: 500px;
+  }
+  .main__chess {
+    left: 10px;
+  }
+  .main__line {
+    left: -45px;
+  }
+  .main__line_2 {
+    left: 425px;
+  }
+  .main__line_3 {
+    left: 400px;
+  }
+  .main__cross_2 {
+    display: none;
+  }
+}
+@media all and (max-width: 1550px) {
+  #main_text__description {
+    width: auto;
+  }
+  .main__rectangle_2 {
+    display: none;
+  }
+  .main__slider {
+    right: 0px;
+  }
+  .main__cross {
+    top: 260px;
+    right: 16px;
+  }
+  .main__triangle_2 {
+    right: 369px;
+  }
+  .main__circle,
+  .main__triangle_1 {
+    display: none;
+  }
+}
+@media all and (max-width: 1100px) {
+  main {
+    height: 960px;
+  }
+  .main__slider {
+    right: 25%;
+  }
+  .main__rectangle {
+    top: 480px;
+    right: 0px;
+    width: auto;
+    background-color: rgba(0, 9, 60, 1);
+  }
+  .main_text {
+    width: 600px;
+    left: 50px;
+    top: 505px;
+  }
+  .main__chess {
+    top: 490px;
+    left: -5px;
+  }
+  .main__line {
+    left: -90px;
+    top: 780px;
+  }
+  .main__line_2 {
+    left: 10px;
+    top: 350px;
+  }
+  .main__line_4 {
+    right: 50px;
+    top: 20px;
+  }
+  .main__cross,
+  .main__line_3 {
+    display: none;
+  }
+  .main__triangle_2 {
+    right: 209px;
+    top: 700px;
+  }
+}
+@media all and (max-width: 730px) {
+  .main__slider {
+    left: 0px;
+  }
+  .main_text {
+    width: 500px;
+    left: 20px;
+  }
+  .main__line_2,
+  .main__line_4,
+  .main__triangle_2,
+  .main__line {
+    display: none;
+  }
+  .main__chess {
+    top: 670px;
+    left: 360px;
+  }
+}
+@media all and (max-width: 538px) {
+  main {
+    height: 1200px;
+  }
+  .main__slider {
+    left: auto;
+    right: 0px;
+  }
+  .main_text {
+    width: 300px;
+  }
+  .main_text h3 {
+    width: 300px;
+  }
+  .main__chess {
+    display: none;
+  }
+  .main_text_container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

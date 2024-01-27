@@ -1,0 +1,82 @@
+
+header {
+    width: auto;
+    height: 110px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  header a {
+    color: black;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .header_logo__menu_dark {
+    display: none;
+  }
+  .header__logo {
+    width: 100px;
+    height: 70.646px;
+    margin-left: 370px;
+  }
+  .header__nav_main {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    margin-left: 63px;
+  }
+  .header__nav_info {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    margin-left: 68px;
+  }
+  .header__nav_courses {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+  }
+  .header__nav_info_city {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    align-items: center;
+  }
+  .header__nav_info_login {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    align-items: center;
+  }
+
+@media all and (max-width: 1550px) {
+  .header__logo {
+    margin-left: 50px;
+  }
+  .header__line{
+    left: 220px;
+  }
+}
+@media all and (max-width: 1250px) {
+  .header_logo__menu_dark {
+    display: block;
+    position: absolute;
+    top: 39x;
+    right: 33px;
+  }
+  .header__nav_main {
+    display: none;
+  }
+  .header__nav_info {
+    display: none;
+  }
+  .header__line{
+ display: none;
+  }
+}

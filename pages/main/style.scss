@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'),
+        url('../../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f6f7f9;
+}
+
+@mixin font($color, $size, $weight) {
+    color: $color;
+    font-family: Montserrat;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@import 'header';
+@import 'main';
+@import 'courses';
+@import 'video';
+@import 'stats';
+@import 'grid';
+@import 'reviews_welcome';
+@import 'form_footer';
+@import 'footer';

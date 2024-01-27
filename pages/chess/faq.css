@@ -1,0 +1,148 @@
+.faq {
+  width: auto;
+  margin-top: 66.5px;
+  margin-left: 370px;
+}
+.faq h1 {
+  color: black;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.faq_area {
+  height: 500px;
+  width: 1180px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.faq__circle {
+  position: absolute;
+  top: 142px;
+  left: -103px;
+  z-index: 1;
+}
+.faq__cross {
+  position: absolute;
+  bottom: -45px;
+  right: -111px;
+  z-index: 1;
+}
+.faq__triangle {
+  position: absolute;
+  top: -65px;
+  right: -62px;
+  z-index: 1;
+}
+.faq_area_block {
+  position: relative;
+  width: 1180px;
+  height: 65px;
+  border-radius: 6px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 1px 1px 10px -3px #f7941d;
+}
+.faq_area_block:hover {
+  transition-duration: 1s;
+  height: 220px;
+  box-shadow: 1px 1px 20px 1px #f7941d;
+  cursor: pointer;
+}
+.faq_area_block h5 {
+  color: #00093c;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 0px 19px 30px;
+}
+.faq_area_block p {
+  color: black;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-left: 30px;
+}
+.faq_cross_logo {
+  position: absolute;
+  top: 28px;
+  right: 30px;
+}
+.faq_area_block:hover img {
+  display: none;
+}
+.faq_area_block:hover::after {
+  content: url(../../assets/logo/faq_cross_hover_logo.png);
+  position: absolute;
+  top: 28px;
+  right: 30px;
+  transition-duration: 1s;
+}
+
+@media all and (max-width: 1800px) {
+  .faq__cross {
+    right: 0px;
+  }
+  .faq__triangle {
+    right: 0px;
+  }
+}
+@media all and (max-width: 1570px) {
+  .faq {
+    margin-left: 100px;
+  }
+  .faq__cross {
+    left: 100px;
+  }
+  .faq__triangle {
+    left: 400px;
+  }
+}
+@media all and (max-width: 1305px) {
+  .faq_area {
+    width: 600px;
+  }
+  .faq_area_block {
+    width: 600px;
+  }
+  .faq_area_block:hover {
+    height: 400px;
+  }
+}
+@media all and (max-width: 950px) {
+  .faq {
+    margin-left: 20px;
+  }
+  .faq__triangle{
+    display: none;
+  }
+  .faq__circle{
+    top: 10px;
+  }
+  .faq_area {
+    width: 370px;
+    height: auto;
+    margin-top: 100px;
+  }
+  .faq_area_block {
+    width: 400px;
+  }
+  .faq_cross_logo {
+    position: absolute;
+    top: 25px;
+    right: 5px;
+  }
+  .faq_area_block:hover {
+    height: 500px;
+  }
+}
+@media all and (max-width: 950px) {
+  .faq {
+    margin-left: 5px;
+  }
+
+}

@@ -1,0 +1,134 @@
+.chess_school {
+  margin-top: 98px;
+  margin-left: 370px;
+}
+.chess_school h1 {
+  color: black;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+}
+.chess_school p {
+  max-width: 950px;
+  color: black;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 9px;
+  margin-bottom: 41px;
+}
+.chess_school_cons {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 20px;
+}
+.chess_school_cons_block {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.chess_school_cons_block span {
+  color: black;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.chess_school_cons_block img {
+  align-self: flex-start;
+}
+
+.sign_up_school {
+  width: auto;
+  height: 310px;
+  position: relative;
+  background-color: rgba(0, 9, 60, 1);
+  margin-top: 65px;
+}
+.sign_up_school_cons_1 {
+  max-width: 481px;
+  position: absolute;
+  top: 91px;
+  left: 370px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.sign_up_school_cons_2 {
+  max-width: 486px;
+  position: absolute;
+  top: 91px;
+  left: 970px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.sign_up_school button {
+  width: 191px;
+  height: 50px;
+  background-color: #f7941d;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 50px;
+  left: 865px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+}
+@media all and (max-width: 1560px) {
+  .chess_school {
+    margin-left: 100px;
+  }
+  .sign_up_school_cons_1 {
+    left: 100px;
+  }
+  .sign_up_school_cons_2 {
+    left: 700px;
+  }
+  .sign_up_school button {
+    left: 585px;
+  }
+}
+@media all and (max-width: 1260px) {
+  .sign_up_school {
+    height: 400px;
+  }
+  .chess_school_cons {
+    flex-wrap: wrap;
+  }
+  .sign_up_school_cons_2 {
+    top: 200px;
+    left: 100px;
+  }
+  .sign_up_school button {
+    left: 200px;
+    top: 300px;
+  }
+}
+@media all and (max-width: 950px) {
+  .sign_up_school {
+    height: 500px;
+  }
+  .chess_school {
+    margin-left: 20px;
+  }
+  .sign_up_school_cons_1 {
+    left: 20px;
+  }
+  .sign_up_school_cons_2 {
+    top: 250px;
+    left: 20px;
+  }
+  .sign_up_school button {
+    left: 20px;
+    top: 400px;
+  }
+}

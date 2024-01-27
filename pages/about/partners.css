@@ -1,0 +1,49 @@
+.partners {
+  margin-top: 105px;
+  margin-left: 370px;
+}
+.partners h5 {
+  color: black;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+.partners_area {
+  width: 1180px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.partners_card {
+  width: 180px;
+  height: 120px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 6px 0px #ffce94;
+}
+.partners_card:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+
+@media all and (max-width: 1575px) {
+  .partners {
+    margin-left: 100px;
+  }
+}
+@media all and (max-width: 1310px) {
+.partners_area{
+  width: auto;
+}
+}
+@media all and (max-width: 830px) {
+  .partners {
+    margin-left: 20px;
+  }
+}
+

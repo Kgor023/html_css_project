@@ -1,0 +1,78 @@
+.vacanses {
+  max-width: 1200px;
+  margin-bottom: 80px;
+  margin-left: 370px;
+}
+
+.vacanses h1 {
+  color: black;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 35px;
+}
+.vacanses_container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.vacanses_block {
+  width: 380px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.vacanses_block__title {
+  text-decoration: none;
+  color: #00093c;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-top: 27px;
+}
+.vacanses_block p {
+  color: #4f4f4f;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-left: 30px;
+  margin-bottom: 23px;
+}
+.vacanses_block__price {
+  color: #00093c;
+  font-family: Montserrat;
+  font-size: 28px;
+  padding-left: 30px;
+  font-weight: 700;
+}
+#vacanses_block_1 {
+  background-color: rgba(197, 221, 255, 1);
+}
+#vacanses_block_2 {
+  background-color: rgba(184, 239, 207, 1);
+}
+
+#vacanses_block_3 {
+  background-color: rgba(255, 206, 148, 1);
+}
+#vacanses_block_4 {
+  background-color: rgba(199, 238, 255, 1);
+}
+#vacanses_block_5 {
+  background-color: rgba(255, 227, 142, 1);
+}
+@media all and (max-width: 1570px) {
+  .vacanses {
+    margin-left: 100px;
+  }
+}
+@media all and (max-width: 830px) {
+  .vacanses {
+    margin-left: 20px;
+  }
+}

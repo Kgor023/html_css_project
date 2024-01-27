@@ -1,0 +1,47 @@
+.welcome {
+  margin-left: 370px;
+  margin-bottom: 80px;
+}
+.welcome h1 {
+  color: black;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+.welcome_pros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.welcome_pros_card {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+.welcome_pros_card img {
+height: 60px;
+width: 60px;
+}
+.welcome_pros_card span {
+  display: inline-block;
+  color: black;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-top: 24px;
+}
+
+@media all and (max-width: 1575px) {
+  .welcome {
+    margin-left: 100px;
+  }
+}
+
+@media all and (max-width: 830px) {
+  .welcome {
+    margin-left: 20px;
+  }
+}

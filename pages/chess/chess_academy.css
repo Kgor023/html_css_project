@@ -1,0 +1,175 @@
+.chess_academy {
+  max-width: auto;
+  margin-top: 84px;
+  margin-bottom: 72px;
+}
+.chess_academy_for-student {
+  margin-left: 370px;
+}
+.chess_academy_for-student h1 {
+  color: black;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+}
+.chess_academy_for-student p {
+  width: 979px;
+  color: black;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+.chess_academy_photos {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 38px;
+  overflow: hidden;
+}
+.chess_academy_scroll {
+  display: inline-block;
+  margin-left: 370px;
+  position: relative;
+}
+
+.chess_academy_scroll__bar {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+.chess_academy_course_text {
+  margin-top: 86px;
+  margin-left: 370px;
+  position: relative;
+}
+
+.chess_academy_course_text p {
+  color: black;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  width: 979px;
+  margin-top: 11px;
+  margin-bottom: 25px;
+}
+
+.chess_academy_course_text h1 {
+  color: black;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.chess_academy_course_text button {
+  width: 191px;
+  height: 50px;
+  background-color: #f7941d;
+  border: 1px solid #f7941d;
+  border-radius: 6px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 14px;
+}
+.chess_academy_course_text_block {
+  position: absolute;
+  width: 520px;
+  top: 215px;
+  right: 334px;
+  overflow: visible;
+}
+.chess_academy_course_text_block span {
+  color: black;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.chess_academy_course_text__owl {
+  position: absolute;
+  top: 45px;
+  right: -30px;
+}
+.chess_academy_course_text__img_1 {
+  position: absolute;
+  top: -30px;
+  right: 514px;
+}
+.chess_academy_course_text__img_2 {
+  position: absolute;
+  top: -30px;
+  right: 392px;
+}
+.chess_academy_course_text__img_3 {
+  position: absolute;
+  top: 105px;
+  right: 489px;
+}
+.chess_academy_course_text__img_4 {
+  position: absolute;
+  top: 90px;
+  right: 335px;
+}
+
+@media all and (max-width: 1600px) {
+  .chess_academy_scroll {
+    margin-left: 100px;
+  }
+  .chess_academy_for-student,
+  .chess_academy_course_text {
+    margin-left: 100px;
+  }
+  .chess_academy_course_text__img_1,
+  .chess_academy_course_text__img_2,
+  .chess_academy_course_text__img_3,
+  .chess_academy_course_text__img_4 {
+    display: none;
+  }
+  .chess_academy_course_text_block {
+    right: 30px;
+  }
+}
+
+@media all and (max-width: 1310px) {
+  .chess_academy_scroll {
+    margin-left: 0px;
+    position: relative;
+    left: 0px;
+    width: auto;
+  }
+}
+@media all and (max-width: 1210px) {
+  .chess_academy_scroll__line {
+    display: none;
+  }
+}
+@media all and (max-width: 1100px) {
+  .chess_academy_for-student,
+  .chess_academy_course_text {
+    margin-left: 20px;
+  }
+  .chess_academy_course_text p {
+    width: auto;
+  }
+  .main_text_container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .chess_academy_for-student p {
+    width: auto;
+  }
+}
+@media all and (max-width: 950px) {
+  .chess_academy_course_text_block {
+    display: none;
+  }
+}

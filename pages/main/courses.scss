@@ -1,0 +1,200 @@
+@mixin card($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin position($left, $top) {
+    position: absolute;
+    left: $left;
+    top: $top;
+}
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 100px;
+    margin-left: 330px;
+    .courses_scroll {
+        position: relative;
+        .courses_scroll__line,
+        .courses_scroll__bar {
+            @include position(0px, 12px);
+        }
+    }
+    .courses_img {
+        @include card(380px, 265px);
+        position: relative;
+        .courses_img__rect {
+            @include card(190px, 260px);
+            .courses_img__text {
+                @include position(20px, 20px);
+                p {
+                    @include font(black, 16px, 500);
+                    margin: 0px;
+                    margin-top: 20px;
+                }
+                span {
+                    @include font(black, 16px, 600);
+                    margin: 0px;
+                }
+            }
+        }
+        .courses_img__owl {
+            @include position(-40px, 165px);
+        }
+    }
+    .courses_ages {
+        display: flex;
+        flex-direction: row;
+        gap: 160px;
+        margin-bottom: 14px;
+        .ages_child,
+        .ages_teen,
+        .ages_adult {
+            display: flex;
+            flex-direction: row;
+            gap: 17px;
+            align-items: center;
+            h6 {
+                @include font(black, 16px, 700);
+            }
+            span {
+                @include font(rgb(79, 79, 79), 12px, 400);
+            }
+        }
+    }
+    .courses_types {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        max-width: 797px;
+        flex-wrap: wrap;
+        margin-top: 82px;       
+        .courses_types_block {
+            border-radius: 6px;
+            background-color: white;
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        :is(.courses_types_robot,
+            .courses_types_games,
+            .courses_types_web,
+            .courses_types_multi,
+            .courses_types_chess,
+            .courses_types_3d,
+            .courses_types_lang,
+            .courses_types_blog,
+            .courses_types_skills)::before {
+            content: "";
+            position: absolute;
+            z-index: -2;
+            inset: 3px;
+            background-image: linear-gradient(90deg, #f7941d, #27aae1);
+            filter: blur(12px);
+        }
+        :is(.courses_types_robot,
+            .courses_types_games,
+            .courses_types_web,
+            .courses_types_multi,
+            .courses_types_chess,
+            .courses_types_3d,
+            .courses_types_lang,
+            .courses_types_blog,
+            .courses_types_skills)::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            background: inherit;
+            border: inherit;
+        }
+        :is(.courses_types_robot,
+            .courses_types_games,
+            .courses_types_web,
+            .courses_types_multi,
+            .courses_types_chess,
+            .courses_types_3d,
+            .courses_types_lang,
+            .courses_types_blog,
+            .courses_types_skills):hover {
+            transform: scale(1.2);
+            transition-duration: 0.7s;
+        }
+        .courses_types_robot {
+            @include card(50px, 150px);
+        }
+        .courses_types_games {
+            @include card(50px, 140px);
+        }
+        .courses_types_web {
+            @include card(50px, 160px);
+        }
+        .courses_types_multi {
+            @include card(50px, 140px);
+        }
+        .courses_types_chess {
+            @include card(50px, 110px);
+        }
+        .courses_types_3d {
+            @include card(50px, 260px);
+        }
+        .courses_types_lang {
+            @include card(50px, 170px);
+        }
+        .courses_types_blog {
+            @include card(50px, 100px);
+        }
+        .courses_types_skills {
+            @include card(50px, 110px);
+        }
+    }
+}
+@media all and (max-width: 1560px) {
+    .courses {
+        margin-left: 100px;
+        .courses_scroll__line {
+            display: none;
+        }
+    }
+}
+@media all and (max-width: 1260px) {
+    .courses {
+        padding-top: 100px;
+        .courses_ages {
+            gap: 20px;
+        }
+        .courses_types {
+            width: 500px;
+        }
+    }
+}
+@media all and (max-width: 950px) {
+    .courses {
+        flex-direction: column;
+        margin-left: 50px;
+    }
+}
+@media all and (max-width: 605px) {
+    .courses {
+        margin-left: 15px;
+        .courses_ages {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .courses_types {
+            width: 200px;
+        }
+    }
+}
+@media all and (max-width: 500px) {
+    .ages_child,
+    .ages_teen,
+    .ages_adult {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

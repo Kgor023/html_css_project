@@ -1,0 +1,76 @@
+%flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header {
+    width: auto;
+    height: 110px;
+    background-color: white;
+    position: relative;
+    @extend %flex;
+
+    .header_logo__menu_dark {
+        display: none;
+    }
+
+    .header__logo {
+        width: 100px;
+        height: 70.646px;
+        margin-left: 370px;
+    }
+
+    a {
+        @include font (black, 14px, 500);
+        text-decoration: none;
+    }
+
+    .header__nav_main {
+        @extend %flex;
+        gap: 40px;
+        margin-left: 63px;
+
+        .header__nav_courses {
+            @extend %flex;
+            gap: 6px;
+        }
+    }
+
+    .header__nav_info {
+        @extend %flex;
+        gap: 40px;
+        margin-left: 68px;
+
+        .header__nav_info_city {
+            @extend %flex;
+            gap: 9px;
+        }
+
+        .header__nav_info_login {
+            @extend %flex;
+            gap: 9px;
+        }
+    }
+
+
+    @media all and (max-width: 1550px) {
+        .header__logo {
+            margin-left: 50px;
+        }
+    }
+
+    @media all and (max-width: 1250px) {
+        .header_logo__menu_dark {
+            display: block;
+            position: absolute;
+            top: 39x;
+            right: 33px;
+        }
+
+        .header__nav_main,
+        .header__nav_info {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,151 @@
+main {
+  margin-bottom: 100px;
+}
+.log_in {
+  max-width: 580px;
+  margin-top: 94px;
+  margin-left: 670px;
+}
+.log_in_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.log_in span {
+  width: 280px;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+.log_in_scroll {
+  position: relative;
+}
+.log_in_scroll_bar {
+  position: absolute;
+  top: 8.5px;
+}
+.owl {
+  height: 380px;
+  position: relative;
+  top: 20px;
+}
+.owl p {
+  color: black;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  top: 19px;
+  left: 20px;
+}
+.owl__picture {
+  position: absolute;
+  top: 85.5px;
+  left: -40px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  margin-left: 370px;
+  margin-top: 50px;
+}
+.log_in_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+input[type="text"] {
+  width: 380px;
+  height: 50px;
+  border: 1px solid #dddfe6;
+  border-radius: 6px;
+  background-color: #dddfe6;
+}
+
+input:focus {
+  outline: none;
+  border-color: #f7941d;
+}
+
+input::placeholder {
+  color: #4f4f4f;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 15px;
+  padding-left: 19px;
+}
+.log_in_form_text {
+  display: inline-block;
+  margin-top: 16px;
+  color: black;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
+.log_in_form_links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 12px;
+}
+.log_in_form_links img {
+  height: 26px;
+}
+.log_in_form__button {
+  width: 180px;
+  height: 50px;
+  border: 1px solid #f7941d;
+  border-radius: 6px;
+  background-color: #f7941d;
+  color: white;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media all and (max-width: 1280px) {
+  .container {
+    margin-left: 100px;
+  }
+  .log_in {
+    margin-left: 400px;
+  }
+}
+@media all and (max-width: 1000px) {
+  .container {
+    width: 400px;
+    margin-left: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .log_in {
+    margin-left: 100px;
+  }
+}
+@media all and (max-width: 750px) {
+  .container {
+    margin-left: 20px;
+  }
+  .log_in {
+    width: 400px;
+    margin-left: 10px;
+  }
+  .log_in_scroll {
+    margin-left: -60px;
+  }
+  .log_in_scroll_line {
+    margin-left: -140px;
+  }
+}

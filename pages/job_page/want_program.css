@@ -1,0 +1,79 @@
+.want_program {
+  height: 380px;
+  background-color: rgba(0, 9, 60, 1);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.want_program h1 {
+  width: 355px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  padding-top: 25px;
+}
+.want_program_block {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.want_program_block p {
+  color: white;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.want_program_block span {
+  color: white;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.want_program_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 38px;
+  flex-wrap: wrap;
+}
+.want_program button {
+  margin: 20px 0px 0px 865px;
+  height: 50px;
+  width: 191px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgba(247, 148, 29, 1);
+  border: 1px solid rgba(247, 148, 29, 1);
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media all and (max-width:1560px) {
+  .want_program button{
+    margin-left: 100px;
+  }
+  .want_program_container {
+    flex-direction: column;
+    margin-left: 100px;
+  }
+  .want_program{
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .want_program h1{
+    margin-left: 100px;
+  }
+}
+@media all and (max-width:950px) {
+  .want_program button,.want_program_container, .want_program h1{
+    margin-left: 10px;
+  }
+
+}

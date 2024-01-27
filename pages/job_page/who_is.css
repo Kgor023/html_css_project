@@ -1,0 +1,74 @@
+.who_is{
+    margin: 68px 0px 50px 370px;
+}
+.who_is__title{
+    color: black;
+font-family: Montserrat;
+font-size: 36px;
+font-weight: 700;
+margin-bottom: 16px;
+}
+.who_is__description{
+    width: 979px;
+    color: black;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-bottom: 55px;
+}
+.learn__title{
+    color: black;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 24px; 
+}
+.learn_blocks{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.learn_block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+}
+.learn_block span{
+    width: 349px;
+    color: black;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.learn_block_logo{
+    position: relative;
+}
+.job_done{
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+@media all and (max-width:1560px) {
+    .who_is{
+        margin-left: 100px;
+    }
+    .who_is__description{
+        width: auto;
+    }
+}
+@media all and (max-width:950px) {
+    .who_is{
+        margin-left: 20px;
+    }
+.learn{
+    padding-left: 0px;
+}
+}

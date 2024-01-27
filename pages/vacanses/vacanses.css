@@ -1,0 +1,193 @@
+.vacanses {
+  height: auto;
+  width: auto;
+  margin-top: 60px;
+}
+.vacanses_area {
+  height: auto;
+  width: 1180px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.vacanses__circle {
+  position: absolute;
+  top: 142px;
+  left: -103px;
+  z-index: 1;
+}
+.vacanses__cross {
+  position: absolute;
+  bottom: -45px;
+  right: -111px;
+  z-index: 1;
+}
+.vacanses__triangle {
+  position: absolute;
+  top: -65px;
+  right: -62px;
+  z-index: 1;
+}
+.vacanses_area_block {
+  position: relative;
+  width: 1180px;
+  height: 70px;
+  border-radius: 6px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 1px 1px 10px -3px #f7941d;
+}
+.vacanses_area_block:hover {
+  transition-duration: 1s;
+  height: 1100px;
+  box-shadow: 1px 1px 20px 1px #f7941d;
+  cursor: pointer;
+}
+.vacanses_area_block_text {
+  padding-left: 30px;
+}
+.vacanses_area_block h3 {
+  color: #00093c;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 30px;
+}
+.vacanses_area_block h4 {
+  position: absolute;
+  top: 16px;
+  right: 131px;
+  color: #4f4f4f;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 34px;
+}
+.vacanses_area_block h5 {
+  color: #00093c;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.vacanses_area_block p {
+  color: black;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.vacanses_cross_logo {
+  position: absolute;
+  top: 28px;
+  right: 30px;
+}
+.vacanses_area_block:hover img {
+  display: none;
+}
+.vacanses_area_block:hover::after {
+  content: url(../../assets/logo/faq_cross_hover_logo.png);
+  position: absolute;
+  top: 28px;
+  right: 30px;
+  transition-duration: 1s;
+}
+
+.vacanses_area_block_text_list {
+  margin-top: 20px;
+}
+.vacanses_area_block_text_list span {
+  color: #00093c;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 26px;
+}
+li {
+  color: black;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-left: 30px;
+  list-style-position: inside;
+}
+ul{
+  padding: 0;
+}
+.vacanses_area_block_text button {
+  height: 50px;
+  width: 150px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgba(247, 148, 29, 1);
+  border: 1px solid rgba(247, 148, 29, 1);
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media all and (max-width: 1800px) {
+  .vacanses__cross {
+    right: 0px;
+  }
+  .vacanses__triangle {
+    right: 0px;
+  }
+}
+@media all and (max-width: 1580px) {
+  main {
+    margin-left: 100px;
+  }
+  .vacanses__cross {
+    left: 100px;
+  }
+  .vacanses__triangle {
+    left: 400px;
+  }
+}
+@media all and (max-width: 1310px) {
+  .vacanses_area {
+    width: 600px;
+  }
+  .vacanses_area_block {
+    width: 600px;
+  }
+  .vacanses_area_block:hover {
+    height: 1500px;
+  }
+}
+@media all and (max-width: 950px) {
+  main {
+    margin-left: 20px;
+  }
+  .vacanses__triangle {
+    display: none;
+  }
+  .vacanses__circle {
+    top: 10px;
+  }
+  .vacanses_area {
+    width: 370px;
+    height: auto;
+    margin-top: 100px;
+  }
+  .vacanses_area_block {
+    width: 400px;
+  }
+  .vacanses_cross_logo {
+    position: absolute;
+    top: 25px;
+    right: 5px;
+  }
+  .vacanses_area_block:hover {
+    height: 2100px;
+  }
+}
+

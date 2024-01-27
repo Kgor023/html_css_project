@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Все курсы</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.scss" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="header__logo"
+        src="../../assets/logo/logo_page2.png"
+        alt="logo"
+      />
+      <img
+        class="header_logo__menu"
+        src="../../assets/logo/header__menu.png"
+        width="45px"
+        height="35px"
+      />
+      <nav class="header__nav_main">
+        <div class="header__nav_courses">
+          <img
+            style="width: 20px; height: 15.972px"
+            src="../../assets/logo/logo_menu.png"
+            alt="rectangle"
+          />
+          <a href="../all_courses/courses.html"> Все курсы</a>
+        </div>
+        <a href="../all_events/events.html"> Мероприятия </a>
+        <a href=""> Базы знаний </a>
+        <a href="../career/career.html"> Карьера </a>
+      </nav>
+      <nav class="header__nav_info">
+        <div class="header__nav_info_city">
+          <img
+            style="width: 17px; height: 20px"
+            src="../../assets/logo/logo_point_page_2.png"
+            alt="point"
+          />
+          <a href=""> Нижний Новгород </a>
+          <img
+            style="width: 8px; height: 4px"
+            src="../../assets/logo/logo_arrow_page_2.png"
+            alt="arrow"
+          />
+        </div>
+        <span> 8 800 950-33-98 </span>
+        <div class="header__nav_info_login">
+          <img
+            style="width: 17.28px; height: 18.323px"
+            src="../../assets/logo/logo_man_page_2.png"
+            alt="person"
+          />
+          <a href="../form/form.html"> Войти </a>
+        </div>
+      </nav>
+      <img class="header__line" src="../../img/header_line.png" alt="" />
+    </header>
+
+    <div class="filter_area">
+      <img width="20px" height="20px" src="../../assets/logo/filter_logo.png" />
+      <span>Фильтры</span>
+    </div>
+
+    <main>
+      <h1>Все программы обучения</h1>
+      <div class="courses_ages">
+        <div class="ages_child">
+          <img src="../../assets/logo/children.png" alt="" />
+          <div>
+            <h6>Дети</h6>
+            <span>8 — 14 лет</span>
+          </div>
+        </div>
+        <div class="ages_teen">
+          <img src="../../assets/logo/teen.png" alt="" />
+          <div>
+            <h6>Подростки</h6>
+            <span>14 — 18 лет</span>
+          </div>
+        </div>
+        <div class="ages_adult">
+          <img src="../../assets/logo/family.png" alt="" />
+          <div>
+            <h6>Взрослые</h6>
+            <span>18 — ∞ </span>
+          </div>
+        </div>
+      </div>
+      <div class="courses_scroll">
+        <img
+          class="courses_scroll__bar"
+          src="../../img/scroll_bar_1.png"
+          alt=""
+        />
+        <img
+          class="courses_scroll__line"
+          src="../../img/scroll_line_page_2.png"
+          alt=""
+        />
+      </div>
+
+      <section class="main">
+        <aside>
+          <form class="form_aside">
+            <div class="form_complexity">
+              <span style="margin-top: 0px" class="form__description">
+                Уровень сложности
+              </span>
+              <div class="form_complexity_inputs">
+                <input type="radio" id="beginner" name="radio" />
+                <label for="beginner"> Новичок </label>
+              </div>
+              <div class="form_complexity_inputs">
+                <input type="radio" id="user" name="radio" />
+                <label for="user"> Пользователь </label>
+              </div>
+              <div class="form_complexity_inputs">
+                <input type="radio" id="pro" name="radio" />
+                <label for="pro"> Профессионал </label>
+              </div>
+              <div class="form_complexity_inputs">
+                <input type="radio" id="cheater" name="radio" />
+                <label for="cheater"> Читер </label>
+              </div>
+            </div>
+            <img
+              class="form__line"
+              src="../../img/line_page2_form.png"
+              alt=""
+            />
+            <div class="form_study">
+              <span class="form__description"> Тип обучения </span>
+              <div class="form_study_inputs">
+                <input type="radio" id="any" name="radio_study" />
+                <label for="any"> Любой </label>
+              </div>
+              <div class="form_study_inputs">
+                <input type="radio" id="profession" name="radio_study" />
+                <label for="profession"> Профессия </label>
+              </div>
+              <div class="form_study_inputs">
+                <input type="radio" id="course" name="radio_study" />
+                <label for="course">Курс </label>
+              </div>
+            </div>
+            <img class="form__line" src="../../img/line_page2_form.png" />
+            <div class="form_duration">
+              <span class="form__description"> Длительность </span>
+              <div class="form_duration_inputs">
+                <label for="duration"> от 1 до 24 месяцев </label>
+                <input type="range" class="form-range" id="customRange1" />
+              </div>
+            </div>
+          </form>
+          <div class="banner">
+            <p>
+              Баннер <br />
+              280х400
+            </p>
+          </div>
+        </aside>
+
+        <section class="courses">
+          <h3>Направления</h3>
+          <div class="courses_types">
+            <div class="courses_types_robot"><a> Робототехника </a></div>
+            <div class="courses_types_games"><a> Создание игр </a></div>
+            <div class="courses_types_web"><a> Web-разработка </a></div>
+            <div class="courses_types_multi"><a> Мультимедия </a></div>
+            <div class="courses_types_chess">
+              <a href="../chess/chess.html"> Шахматы </a>
+            </div>
+            <div class="courses_types_3d">
+              <a> 3D-моделирование и дизайн </a>
+            </div>
+            <div class="courses_types_lang"><a> Английский язык </a></div>
+            <div class="courses_types_blog"><a> Блогинг </a></div>
+            <div class="courses_types_skills"><a> Soft skills </a></div>
+          </div>
+
+          <div class="courses_program">
+            <div id="courses_program_cards_1" class="courses_program_cards">
+              <span class="courses_program_cards_program"> Программа </span>
+              <div class="courses_program_cards_title">
+                <img src="../../img/phone.png" alt="" />
+                <span
+                  >«Разработка мобильных <br />
+                  приложений»</span
+                >
+              </div>
+              <p class="courses_program_cards_text">
+                Разработчик мобильных приложений создаёт приложения, которыми
+                люди ежедневно пользуются на смартфонах, умных часах и
+                планшетах.
+              </p>
+              <span class="courses_program_cards_month"> 24 месяца </span>
+            </div>
+
+            <div id="courses_program_cards_2" class="courses_program_cards">
+              <span class="courses_program_cards_program"> Программа </span>
+              <div class="courses_program_cards_title">
+                <img src="../../img/phone.png" alt="" />
+                <span
+                  >«Разработка мобильных <br />
+                  приложений»</span
+                >
+              </div>
+              <p class="courses_program_cards_text">
+                Разработчик мобильных приложений создаёт приложения, которыми
+                люди ежедневно пользуются на смартфонах, умных часах и
+                планшетах.
+              </p>
+              <span class="courses_program_cards_month"> 24 месяца </span>
+              <div class="courses_program_cards_sale">-10%</div>
+            </div>
+
+            <div id="courses_program_cards_3" class="courses_program_cards">
+              <span class="courses_program_cards_program"> Программа </span>
+              <div class="courses_program_cards_title">
+                <img src="../../img/phone.png" alt="" />
+                <span
+                  >«Разработка мобильных <br />
+                  приложений»</span
+                >
+              </div>
+              <p class="courses_program_cards_text">
+                Разработчик мобильных приложений создаёт приложения, которыми
+                люди ежедневно пользуются на смартфонах, умных часах и
+                планшетах.
+              </p>
+              <span class="courses_program_cards_month"> 24 месяца </span>
+            </div>
+
+            <div id="courses_program_cards_4" class="courses_program_cards">
+              <span class="courses_program_cards_program"> Программа </span>
+              <div class="courses_program_cards_title">
+                <img src="../../img/phone.png" alt="" />
+                <span
+                  >«Разработка мобильных <br />
+                  приложений»</span
+                >
+              </div>
+              <p class="courses_program_cards_text">
+                Разработчик мобильных приложений создаёт приложения, которыми
+                люди ежедневно пользуются на смартфонах, умных часах и
+                планшетах.
+              </p>
+              <span class="courses_program_cards_month"> 24 месяца </span>
+            </div>
+
+            <div id="courses_program_cards_5" class="courses_program_cards">
+              <span class="courses_program_cards_program"> Программа </span>
+              <div class="courses_program_cards_title">
+                <img src="../../img/phone.png" alt="" />
+                <span
+                  >«Разработка мобильных <br />
+                  приложений»</span
+                >
+              </div>
+              <p class="courses_program_cards_text">
+                Разработчик мобильных приложений создаёт приложения, которыми
+                люди ежедневно пользуются на смартфонах, умных часах и
+                планшетах.
+              </p>
+              <span class="courses_program_cards_month"> 24 месяца </span>
+              <div class="courses_program_cards_sale">-10%</div>
+            </div>
+
+            <div id="courses_program_cards_6" class="courses_program_cards">
+              <span class="courses_program_cards_program"> Программа </span>
+              <div class="courses_program_cards_title">
+                <img src="../../img/phone.png" alt="" />
+                <span
+                  >«Разработка мобильных <br />
+                  приложений»</span
+                >
+              </div>
+              <p class="courses_program_cards_text">
+                Разработчик мобильных приложений создаёт приложения, которыми
+                люди ежедневно пользуются на смартфонах, умных часах и
+                планшетах.
+              </p>
+              <span class="courses_program_cards_month"> 24 месяца </span>
+              <div class="courses_program_cards_sale">-10%</div>
+            </div>
+
+            <div id="courses_program_cards_7" class="courses_program_cards">
+              <span class="courses_program_cards_program"> Программа </span>
+              <div class="courses_program_cards_title">
+                <img src="../../img/phone.png" alt="" />
+                <span
+                  >«Разработка мобильных <br />
+                  приложений»</span
+                >
+              </div>
+              <p class="courses_program_cards_text">
+                Разработчик мобильных приложений создаёт приложения, которыми
+                люди ежедневно пользуются на смартфонах, умных часах и
+                планшетах.
+              </p>
+              <span class="courses_program_cards_month"> 24 месяца </span>
+            </div>
+
+            <div id="courses_program_cards_8" class="courses_program_cards">
+              <span class="courses_program_cards_program"> Программа </span>
+              <div class="courses_program_cards_title">
+                <img src="../../img/phone.png" alt="" />
+                <span
+                  >«Разработка мобильных <br />
+                  приложений»</span
+                >
+              </div>
+              <p class="courses_program_cards_text">
+                Разработчик мобильных приложений создаёт приложения, которыми
+                люди ежедневно пользуются на смартфонах, умных часах и
+                планшетах.
+              </p>
+              <span class="courses_program_cards_month"> 24 месяца </span>
+            </div>
+
+            <div id="courses_program_cards_9" class="courses_program_cards">
+              <span class="courses_program_cards_program"> Программа </span>
+              <div class="courses_program_cards_title">
+                <img src="../../img/phone.png" alt="" />
+                <span
+                  >«Разработка мобильных <br />
+                  приложений»</span
+                >
+              </div>
+              <p class="courses_program_cards_text">
+                Разработчик мобильных приложений создаёт приложения, которыми
+                люди ежедневно пользуются на смартфонах, умных часах и
+                планшетах.
+              </p>
+              <span class="courses_program_cards_month"> 24 месяца </span>
+            </div>
+
+            <div id="courses_program_cards_10" class="courses_program_cards">
+              <span class="courses_program_cards_program"> Программа </span>
+              <div class="courses_program_cards_title">
+                <img src="../../img/phone.png" alt="" />
+                <span
+                  >«Разработка мобильных <br />
+                  приложений»</span
+                >
+              </div>
+              <p class="courses_program_cards_text">
+                Разработчик мобильных приложений создаёт приложения, которыми
+                люди ежедневно пользуются на смартфонах, умных часах и
+                планшетах.
+              </p>
+              <span class="courses_program_cards_month"> 24 месяца </span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <section>
+      <div class="form">
+        <img class="form__owl" src="../../img/owl_2.png" alt="" />
+        <img class="form__union" src="../../img/textarea_2.png" alt="" />
+        <p class="form__union_text">
+          <span>Помочь с выбором?</span> <br /><br />
+
+          Оставьте заявку и наши специалисты свяжутся с вами, ответят на все
+          вопросы и подберут подходящий вариант обучения.
+        </p>
+        <form class="form_area">
+          <input class="form__name" type="text" placeholder="Ваше имя" />
+          <input class="form__number" type="tel" placeholder="Ваш телефон" />
+          <input class="form__email" type="email" placeholder="Ваш e-mail" />
+          <p class="form__text">
+            Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с
+            правилами пользования <br />
+            Платформой
+          </p>
+          <input class="form__button" type="submit" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_info">
+        <img src="../../assets/logo/logo_footer.png" />
+        <span class="footer_info__number">8 800 950-33-98 </span>
+        <span class="footer_info__adress">г. Москва, ул. Ленина, д. 50</span>
+        <span class="footer_info__email">info@hodfutureacademy.ru</span>
+        <div class="footer_info_social">
+          <img src="../../assets/logo/vk.png" />
+          <img src="../../assets/logo/inst.png" />
+          <img src="../../assets/logo/facebook.png" />
+          <img src="../../assets/logo/youtube.png" />
+          <img src="../../assets/logo/tg.png" />
+        </div>
+        <span class="footer_info__confid">© ХОД, Future Academy</span>
+      </div>
+
+      <div class="footer_block">
+        <div class="footer_block_child">
+          <h6 class="footer_block__title">Детям</h6>
+          <div class="footer_block_text">
+            <span>Робототехника</span>
+            <span>Создание игр</span>
+            <span>Программирование</span>
+            <span>Мультимедиа</span>
+            <span>Soft skills</span>
+            <span> Шахматы</span>
+            <span> Блогинг</span>
+            <span>Создание игр</span>
+            <span>Программирование</span>
+            <span>Мультимедиа</span>
+            <span>Soft skills</span>
+          </div>
+        </div>
+
+        <div class="footer_block_teen">
+          <h6 class="footer_block__title">Подросткам</h6>
+          <div class="footer_block_text">
+            <span>Web-разработка </span>
+            <span> Прикладное программирование </span>
+            <span>Графическое моделирование </span>
+            <span> Game Development</span>
+            <span>Soft skills</span>
+            <span> Разработчик мобильных приложений</span>
+            <span> Блогинг</span>
+            <span>Создание игр</span>
+            <span>Программирование</span>
+            <span>Мультимедиа</span>
+            <span>Soft skills</span>
+          </div>
+        </div>
+
+        <div class="footer_block_adult">
+          <h6 class="footer_block__title">Взрослым</h6>
+          <div class="footer_block_text">
+            <span>Разработчик игр на Unity </span>
+            <span> Разработка ПО </span>
+            <span> Графический Дизайн</span>
+            <span> Тестировщик ПО</span>
+            <span> Интернет Маркетинг</span>
+            <span> Java-разработчик</span>
+            <span> Python–разработчик</span>
+            <span> IOS-разработчик</span>
+            <span>Программирование</span>
+          </div>
+        </div>
+
+        <div class="footer_block_info">
+          <h6 class="footer_block__title">Информация</h6>
+          <div class="footer_block_text">
+            <a href="../about/about.html"> Об академии</a>
+            <a href="../all_events/events.html"> Мероприятия</a>
+            <a href="../all_news/all_news.html"> Новости</a>
+            <span> База знаний</span>
+            <a href="../career/career.html"> Карьера </a>
+            <a href="../contacts/contacts.html"> Контакты</a>
+            <a href="../vacanses/vacanses.html"> Вакансии</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

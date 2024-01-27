@@ -1,0 +1,119 @@
+main {
+    margin-top: 38px;
+    margin-left: 370px;
+
+    h1 {
+        @include font (black, 36px, 700);
+        margin-bottom: 56px;
+    }
+
+    .courses_scroll {
+        position: relative;
+        width: auto;
+
+        .courses_scroll__bar {
+            position: absolute;
+            left: 314px;
+        }
+
+        .courses_scroll__line {
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+    }
+
+    .courses_ages {
+        display: flex;
+        flex-direction: row;
+        gap: 160px;
+        margin-bottom: 14px;
+        margin-left: 320px;
+
+        h6 {
+            @include font (black, 16px, 700);
+        }
+
+        span {
+            @include font (rgb(79, 79, 79), 12px, 400);
+        }
+    }
+
+    .ages_teen,
+    .ages_adult,
+    .ages_child {
+        display: flex;
+        flex-direction: row;
+        gap: 17px;
+        align-items: center;
+    }
+
+}
+
+@media all and (max-width: 1600px) {
+    main {
+        margin-left: 100px;
+    }
+}
+
+@media all and (max-width: 1315px) {
+    main {
+        margin-top: 20px;
+        margin-left: 50px;
+
+        .courses {
+            margin-top: 30px
+        }
+
+        .courses_scroll {
+            .courses_scroll__line {
+                display: none;
+            }
+
+            .courses_scroll__bar {
+                left: 0px;
+            }
+        }
+
+        .courses_ages {
+            margin-left: 0px;
+        }
+    }
+
+    .filter_area {
+        display: block;
+    }
+
+}
+
+@media all and (max-width: 970px) {
+    main {
+        .courses_ages {
+            flex-direction: column;
+            gap: 10px;
+            width: 200px;
+        }
+
+        .courses {
+            .courses_types {
+                width: 400px;
+            }
+
+            .courses_program {
+                width: 450px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    main {
+        margin-top: 10px;
+        margin-left: 20px;
+        .courses_types {
+            width: 200px;
+        }
+        .courses_program {
+            width: 330px;
+        }
+    }
+}

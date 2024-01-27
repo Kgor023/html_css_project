@@ -1,0 +1,137 @@
+main {
+  height: auto;
+  margin-left: 370px;
+  margin-top: 19px;
+}
+.path_to_page {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+.path_to_page a {
+  text-decoration: none;
+  color: #828282;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+}
+.main__title {
+  color: black;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 18px;
+  margin-bottom: 22px;
+}
+.main__description {
+  color: black;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+}
+:is(
+    .courses_types_robot,
+    .courses_types_games,
+    .courses_types_web,
+    .courses_types_multi,
+    .courses_types_chess,
+    .courses_types_3d,
+    .courses_types_lang,
+    .courses_types_blog,
+    .courses_types_skills
+  )::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  inset: 3px;
+  background-image: linear-gradient(90deg, #f7941d, #27aae1);
+  filter: blur(12px);
+}
+:is(
+    .courses_types_robot,
+    .courses_types_games,
+    .courses_types_web,
+    .courses_types_multi,
+    .courses_types_chess,
+    .courses_types_3d,
+    .courses_types_lang,
+    .courses_types_blog,
+    .courses_types_skills
+  )::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: inherit;
+  border: inherit;
+}
+:is(
+    .courses_types_robot,
+    .courses_types_games,
+    .courses_types_web,
+    .courses_types_multi,
+    .courses_types_chess,
+    .courses_types_3d,
+    .courses_types_lang,
+    .courses_types_blog,
+    .courses_types_skills
+  ):hover {
+  transform: scale(1.2);
+  transition-duration: 0.7s;
+}
+.courses_types {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 797px;
+  flex-wrap: wrap;
+  margin-top: 82px;
+}
+.courses_types_block {
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.courses_types_robot {
+  width: 150px;
+  height: 50px;
+}
+.courses_types_games {
+  width: 140px;
+  height: 50px;
+}
+.courses_types_web {
+  width: 160px;
+  height: 50px;
+}
+.courses_types_multi {
+  width: 140px;
+  height: 50px;
+}
+.courses_types_chess {
+  width: 110px;
+  height: 50px;
+}
+.courses_types_3d {
+  width: 260px;
+  height: 50px;
+}
+.courses_types_lang {
+  width: 170px;
+  height: 50px;
+}
+.courses_types_blog {
+  width: 100px;
+  height: 50px;
+}
+.courses_types_skills {
+  width: 110px;
+  height: 50px;
+}
+
+

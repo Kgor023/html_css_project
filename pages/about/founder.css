@@ -1,0 +1,65 @@
+.founder {
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  margin: 216px 0px 70px 370px;
+}
+.foubder_man__name {
+  color: black;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.foubder_man__description {
+  color: #4f4f4f;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.founder_text {
+  width: 680px;
+  color: black;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-top: 23px;
+}
+.founder_text p {
+  color: black;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+.founder_text span {
+  display: inline-block;
+  color: #4f4f4f;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+@media all and (max-width: 1575px) {
+  .founder {
+    margin-left: 100px;
+  }
+}
+@media all and (max-width: 1260px) {
+  .founder {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media all and (max-width: 830px) {
+  .founder {
+    margin-left: 20px;
+  }
+  .founder_text {
+    width: auto;
+  }
+}

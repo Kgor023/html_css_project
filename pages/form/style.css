@@ -1,0 +1,15 @@
+@import url(./header.css);
+@import url(./main.css);
+@import url(./footer.css);
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+    url('../../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+* {
+  margin: 0;
+  padding: o;
+}
+body {
+  background-color: #f6f7f9;
+}

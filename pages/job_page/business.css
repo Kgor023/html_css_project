@@ -1,0 +1,90 @@
+.business {
+  margin-left: 370px;
+  margin-bottom: 90px;
+}
+.business h1 {
+  color: black;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+.business_container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#business_block_1 {
+  background-color: rgba(197, 221, 255, 1);
+}
+#business_block_2 {
+  background-color: rgba(184, 239, 207, 1);
+}
+.business_block {
+  width: 580px;
+  height: 270px;
+  border-radius: 20px;
+}
+.business_block__title {
+  display: inline-block;
+  color: #00093c;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 27px;
+  padding-left: 30px;
+  margin-bottom: 21px;
+}
+.business_block__text {
+  height: 96px;
+  color: #4f4f4f;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-left: 30px;
+  margin-bottom: 14px;
+}
+.business_block__profit {
+  display: inline-block;
+  color: #00093c;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+.business_block__salary {
+  display: inline-block;
+
+  color: #00093c;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  padding-left: 30px;
+}
+
+@media all and (max-width:1580px) {
+  .business{
+    margin-left: 100px;
+  }
+}
+@media all and (max-width:1310px) {
+  .business_container{
+flex-direction: column;
+  }
+}
+@media all and (max-width:900px) {
+  .business{
+    margin-left: 10px;
+  }
+}
+@media all and (max-width:630px) {
+  .business_block {
+    width: 300px;
+    height: auto;
+  }
+  .business_block__text{
+    height: auto;
+  }
+}

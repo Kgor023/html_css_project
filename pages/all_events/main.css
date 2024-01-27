@@ -1,0 +1,253 @@
+main {
+  margin-left: 370px;
+  margin-top: 19px;
+}
+.path_to_page {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+.path_to_page a {
+  text-decoration: none;
+  color: #828282;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+}
+.main__title {
+  color: black;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+.grid {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template: 160px repeat(3, 260px) / repeat(3, 380px);
+  gap: 20px;
+}
+.grid a{
+text-decoration: none;
+}
+.grid_block_day-open-door {
+  border-radius: 20px;
+  background: rgb(247, 188, 117);
+  grid-area: 1/1/2/4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.grid_block_day-open-door_date {
+  width: 108px;
+  height: 107px;
+  display: flex;
+  flex-direction: column;
+  gap: 12.5px;
+  margin-left: 40px;
+  margin-right: 53px;
+}
+.grid_block_day-open-door_text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 190px;
+}
+.grid_block_day-open-door_text h5 {
+  margin: 0px;
+  color: black;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 500;
+}
+.grid_block_day-open-door_text p {
+  color: rgb(51, 51, 51);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-top: 29px;
+}
+.grid_block_day-open-door button {
+  width: 223px;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: black;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.grid_block_cards {
+  width: 380px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 12px 0px #ffce94;
+  border-radius: 20px;
+}
+.grid_block_cards_meet {
+  display: inline-block;
+  color: #4f4f4f;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 28px 0px 18px 29px;
+}
+.grid_block_cards_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-left: 29px;
+  color: #00093c;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+}
+.grid_block_cards_text {
+  width: 320px;
+  color: #4f4f4f;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 25px 0px 17px 29px;
+}
+.grid_block_cards_month {
+  color: black;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 29px;
+}
+#grid_block_cards_1 {
+  grid-area: 2/1/3/2;
+  background-color: rgba(199, 238, 255, 1);
+}
+#grid_block_cards_2 {
+  grid-area: 2/2/3/3;
+  background-color: rgba(255, 227, 142, 1);
+}
+#grid_block_cards_3 {
+  grid-area: 2/3/3/4;
+  background-color: rgba(221, 221, 255, 1);
+}
+#grid_block_cards_4 {
+  grid-area: 4/1/5/2;
+  background-color: rgba(221, 221, 255, 1);
+}
+#grid_block_cards_5 {
+  grid-area: 4/2/5/3;
+  background-color: rgba(255, 238, 246, 1);
+}
+#grid_block_cards_6 {
+  grid-area: 4/3/5/4;
+  background-color: rgba(255, 206, 148, 1);
+}
+.grid_block_men {
+  width: 780px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 1px 1px 12px 0px #ffce94;
+  background-color: rgba(184, 239, 207, 1);
+  border-radius: 20px;
+  grid-area: 3/1/4/3;
+}
+#grid_block_men__text {
+  width: 447px;
+}
+#grid_block_men__title {
+  margin-top: 20px;
+  margin-bottom: 27px;
+}
+.grid_block_shadow {
+  background-image: url(../../img/grid_man_shadow.png);
+  width: 380px;
+  height: 250px;
+  border-radius: 20px;
+  grid-area: 3/3/4/4;
+}
+.grid_block_shadow_layer {
+  background-image: url(../../img/grid_man_shadow_layer.png);
+  width: 380px;
+  height: 250px;
+  border-radius: 20px;
+}
+#grid_block_shadow__title {
+  color: white;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 66px 30px 35px;
+}
+#grid_block_shadow__text {
+  color: white;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 0px 30px 61px 34px;
+}
+@media all and (max-width: 1600px) {
+  main {
+    margin-left: 100px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .grid_block_day-open-door button {
+    margin-right: 30px;
+  }
+}
+@media all and (max-width: 1320px) {
+  .grid_block_day-open-door {
+    width: 400px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .grid_block_day-open-door_text {
+    margin: 0px;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 950px) {
+  main {
+    margin-left: 20px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media all and (max-width: 850px) {
+  .grid_block_men {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+  #grid_block_men__text {
+    width: auto;
+  }
+  #grid_block_men__img{
+    width: 250px;
+    height: 200px;
+  }
+}
